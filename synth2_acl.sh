@@ -4,8 +4,8 @@ acl acces_spachnat dstdomain www1.spachnat.com
 http_access access acces_spachnat
 acl acces_spachnat2 dstdomain www2.spachnat.com
 http_access access acces_spachnat2
-acl acces_kaceboof dstdomain www.kaceboof.fr 
-http_access access acces_kaceboof
+acl acces_fakebooc dstdomain www.fakebooc.com 
+http_access access acces_fakebooc
 acl acces_tendir dstdomain tendir.com 
 http_access access acces_tendir
 acl acces_lorie dstdomain www.lorieforever.fr
@@ -13,13 +13,13 @@ http_access access acces_lorie
 
 #R5
 acl my_reseaux src 192.0.2.50
-
+:
 acl acces_spachnat dstdomain www1.spachnat.com 
 http_access access acces_spachnat
 acl acces_spachnat2 dstdomain www2.spachnat.com
 http_access access acces_spachnat2
-acl acces_kaceboof dstdomain www.kaceboof.fr 
-http_access access acces_kaceboof
+acl acces_fakebooc dstdomain www.fakebooc.com 
+http_access access acces_fakebooc
 acl acces_tendir dstdomain tendir.com 
 http_access access acces_tendir
 acl acces_lorie dstdomain www.lorieforever.fr
