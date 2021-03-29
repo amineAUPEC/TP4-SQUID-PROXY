@@ -34,5 +34,5 @@ acl fichier_exe urlpath_regex \.exe(\?.*)?$
 http_access access fichier_exe
 
 
-systemctl restart squid.service 
-systemctl status squid.service 
+sudo systemctl restart squid.service 
+sudo systemctl status squid.service 

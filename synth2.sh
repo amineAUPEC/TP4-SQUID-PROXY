@@ -33,7 +33,7 @@ acl reseaux src 192.0.2.42
 acl fichier_exe urlpath_regex \.exe(\?.*)?$ 
 http_access access fichier_exe
 
-sudo ./proxycheck.sh
+./proxycheck.sh
 
 
 
@@ -44,7 +44,7 @@ ip a del 192.0.2.50/42 dev eth0
 ip a add 192.0.2.42/42 dev eth0
 ip a del 192.0.2.42/42 dev eth0
 
-sudo ifdown eth0 && sudo ifup eth0 && sudo gedit /etc/network/interfaces
+ifdown eth0 && ifup eth0 && gedit /etc/network/interfaces
 
 ip a add 192.0.2.100/42 dev eth0
 
